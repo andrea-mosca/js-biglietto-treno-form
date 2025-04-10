@@ -1,7 +1,9 @@
 const utentKm = document.getElementById("utent-km");
 const utentAge = document.getElementById("utent-age");
 const sendInfoButton = document.getElementById("send-information-button");
+const utentName = document.getElementById("utent-name");
 
+const ticketName = document.getElementById("ticket-name");
 const ticket = document.getElementById("ticket");
 const discountAmount = document.getElementById("sconto-applicato");
 const ticketCode = document.getElementById("codice-biglietto");
@@ -28,6 +30,7 @@ sendInfoButton.addEventListener("click", function(event){
       discount = elderlyDiscount;
      }
    
+   ticketName.textContent = utentName.value;
    finalTicketPrice.textContent = `${ticketPrice.toFixed(2)} $`;
    ticketCode.textContent = randomTicketCode;
    if(typeof discount === "number"){
