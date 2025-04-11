@@ -18,8 +18,8 @@ sendInfoButton.addEventListener("click", function(event){
 
    const eurForKm = km * 0.21;
    let ticketPrice = eurForKm;
-   const underageDiscount = ticketPrice - (ticketPrice * 0.2);
-   const elderlyDiscount = ticketPrice - (ticketPrice * 0.4);
+   const underageDiscount = ticketPrice - (ticketPrice * 0.8);
+   const elderlyDiscount = ticketPrice - (ticketPrice * 0.6);
    let discount = "prezzo intero";
    let randomTicketCode = Math.floor(Math.random() * 9000)+ 10000;
    if(age < 18){
